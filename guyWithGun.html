@@ -293,19 +293,21 @@ function makeZombie(){
         scoly = true;
         }
         
-        //if (scolx == false || scoly == false){scolx = false; scoly = false;}
+        if (scolx == false || scoly == false){scolx = false; scoly = false;}
         
         if (scolx == true && scoly == true){
         
-            zombieHead.move(800, 800);
-            zombierEye.move(800, 800);
-            zombielEye.move(800, 800);
-            zombierPupil.move(800, 800);
-            zombielPupil.move(800, 800);
-            zombieMouth.move(800, 800);
+            remove(zombieHead);
+            remove(zombierEye);
+            remove(zombielEye);
+            remove(zombierPupil);
+            remove(zombielPupil);
+            remove(zombieMouth);
+            
+            makeZombie();
             
             scolx = false;
-            scoly = false;
+            scoly =false;
             
         }
     }
@@ -325,19 +327,22 @@ function makeZombie(){
         scoly = true;
         }
         
-        //if (scolx == false || scoly == false){scolx = false; scoly = false;}
+        if (scolx == false || scoly == false){scolx = false; scoly = false;}
         
         if (scolx == true && scoly == true){
         
-            zombieHead.move(800, 800);
-            zombierEye.move(800, 800);
-            zombielEye.move(800, 800);
-            zombierPupil.move(800, 800);
-            zombielPupil.move(800, 800);
-            zombieMouth.move(800, 800);
+            remove(zombieHead);
+            remove(zombierEye);
+            remove(zombielEye);
+            remove(zombierPupil);
+            remove(zombielPupil);
+            remove(zombieMouth);
+            
+            makeZombie();
             
             scolx = false;
-            scoly = false;
+            scoly =false;
+            
             
         }
     }
