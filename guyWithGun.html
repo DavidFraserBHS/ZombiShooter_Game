@@ -5,6 +5,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 <script type="text/javascript" src="https://static.codehs.com/gulp/357dc23e34ed6a3646d9278705fc4539ddab665c/chs-js-lib/chs.js"></script>
+    
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 
 <style>
@@ -19,14 +21,14 @@ canvas {
 </head>
 
 <body>
-<h1>Zombie Hord</h1>
+<h1 class="text-center">Zombie Hord</h1>
 
 
-
-<canvas
-width="600"
-height="600"
-class="codehs-editor-canvas"></canvas>
+<div class="row">
+    <div class="col-xs-4"></div>
+    <canvas width="600" height="600" class="codehs-editor-canvas col-xs-4"></canvas>
+    <div class="col-xs-4"></div>
+</div>
 
 
 <script>
@@ -73,12 +75,19 @@ function start(){
         add(pHandel);
     
         makeGuy();
-        makeZombie();
-        makeZombie();
-        makeZombie();
+    
         keyDownMethod(keyDown);
         setTimer(draw, 20);
+        
+        makeZombie();
+        makeZombie();
+        makeZombie();
+        makeZombie();
+        makeZombie();
+        makeZombie();
+        makeZombie();
     
+        
 }
 
 
@@ -304,7 +313,6 @@ function makeZombie(){
             remove(zombielPupil);
             remove(zombieMouth);
             
-            makeZombie();
             
             scolx = false;
             scoly =false;
@@ -337,8 +345,6 @@ function makeZombie(){
             remove(zombierPupil);
             remove(zombielPupil);
             remove(zombieMouth);
-            
-            makeZombie();
             
             scolx = false;
             scoly =false;
